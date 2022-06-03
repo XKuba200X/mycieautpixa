@@ -2,19 +2,10 @@ ESX = nil
 
 Citizen.CreateThread(function()
     while ESX == nil do
-        TriggerEvent('scrap:getSharedObject', function(obj) ESX = obj end)
+        TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
         Citizen.Wait(900)
     end
 end)
-
------------------- Anti D**PER nie dotykać ----------------------------------------------------------
------------------------------------------------------------------------------------------------------
-RegisterNetEvent("loadRes-tgiann-antiDump")
-AddEventHandler("loadRes-tgiann-antiDump", function(data)
-    print(data)
-end)
-------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------
 
 
 RegisterNetEvent('kuba200:washcar')
